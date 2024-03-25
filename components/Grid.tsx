@@ -1,12 +1,12 @@
 import React from "react";
 
-const Feature = ({ title }: any) => (
+const Feature = ({ title ,img,br}: any) => (
     <div className="relative">
-    <img src="/b1.jpg"  className="w-full h-auto rounded-lg" />
+    <img src={img}  className="w-full h-auto rounded-lg" />
     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
     <div className="absolute inset-0 flex items-center left-5">
       <div className="text-white ">
-        <h2 className=" mb-5 text-2xl font-bold">{title}</h2>
+        <h2 className=" mb-5 text-2xl font-bold">{title} <br /> {br}</h2>
         <button
             type="button"
             className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
@@ -21,22 +21,34 @@ const Feature = ({ title }: any) => (
 const Grid = () => {
   const features = [
     {
-      title: "Trend cloud One",
+      title: "Trend ",
+      br:"cloud One",
+      img:"/1.jpg"
     },
     {
-      title: "Trend cloud One",
+      title: "Trend Managed ",
+      br:"Service Partner",
+      img:"/2.jpg"
     },
     {
-      title: "Trend cloud One",
+      title: "Services ",
+      br:"& Support",
+      img:"/3.jpg"
     },
     {
-      title: "Trend cloud One",
+      title: "Threat",
+      br:"Landscape",
+      img:"/4.jpg"
     },
     {
-      title: "Trend cloud One",
+      title: "Trend ",
+      br:"Vision One",
+      img:"/5.jpg"
     },
     {
-      title: "Trend cloud One",
+      title: "Trend",
+      br:"Workforce One",
+      img:"/6.jpg"
     },
   ];
 
@@ -58,7 +70,7 @@ const Grid = () => {
               <div className="absolute -inset-1">
                 <div className="w-full h-full "></div>
               </div>
-              <Feature title={feature.title} />
+              <Feature title={feature.title} img={feature.img} br={feature.br}/>
             </div>
           ))}
         </div>

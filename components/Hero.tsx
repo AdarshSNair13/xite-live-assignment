@@ -11,9 +11,18 @@ const Hero = () => {
   return (
     <div>
       <Swiper
-        autoplay={true}
-        loop={true}
-        modules={[Autoplay, Navigation, Pagination]}
+       style={{
+        // '--swiper-navigation-color': '#fff',
+        // '--swiper-pagination-color': '#fff',
+      }}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
       >
         {SLIDER_DATA.map(({ id, image }) => (
           <div key={id}>
@@ -24,10 +33,14 @@ const Hero = () => {
                   background: `url(${image}) center center / cover scroll no-repeat`,
                 }}
               >
-              <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
                 <div className=" text-white z-[2] ">
-                  <h2 className="top-0 text-5xl font-bold">Partner Webinar Series</h2>
-                  <p className="py-5 text-xl">Coffe Conversation for Throught Leaders</p>
+                  <h2 className="top-0 text-5xl font-bold">
+                    Partner Webinar Series
+                  </h2>
+                  <p className="py-5 text-xl">
+                    Coffe Conversation for Throught Leaders
+                  </p>
                   <button
                     type="button"
                     className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"

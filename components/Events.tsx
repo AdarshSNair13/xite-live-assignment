@@ -1,40 +1,42 @@
 import React from "react";
 
 const Feature = ({ title }: any) => (
-  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-      <img className="rounded-t-lg" src="/b2.jpg" alt="" />
-    </a>
-    <div className="p-5">
-      <a href="#">
+  <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-black dark:border-black">
+    <div className="relative">
+    <img src="/1.jpg"  className="w-full h-auto rounded-lg" />
+    <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+    <div className="absolute inset-0 flex items-center left-5">
+      <div className="text-white ">
+        <button
+            type="button"
+            className="inline-block rounded border px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          >
+            Trend Cloud One
+          </button>
+           <a href="#">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Noteworthy technology acquisitions 2021
+          Workload <br />Security Demo
         </h5>
+        <p className="text-white">06 Apr 2023 | 14.3-15.30(SGST)</p>
       </a>
-      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
+      </div>
+    </div>
+  </div>
+    <div className="p-5">
+      <p className=" font-bold text-white">
+        SPEAKER:
+        <br />
+        ROADGERS KOESCH
+      </p>
+      <p className="text-red-700 py-2">Technical Sales Engineer,Trend Micro</p>
+      <p className="mb-3 font-bold text-white">
+        EPISODE 01
       </p>
       <a
         href="#"
         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
       >
-        Read more
-        <svg
-          className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
-          />
-        </svg>
+        Register Now
       </a>
     </div>
   </div>
