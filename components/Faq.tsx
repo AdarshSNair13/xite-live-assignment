@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const Faq = () => {
-  const [openAccordionId, setOpenAccordionId] = useState(null);
+  const [openAccordionId, setOpenAccordionId] = useState();
 
   const toggleAccordion = (accordionId:any) => {
     setOpenAccordionId((prevId) => (prevId === accordionId ? null : accordionId));
@@ -24,7 +24,7 @@ const Faq = () => {
                     key={index}
                   >
                     <button
-                      className={`accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-white ${
+                      className={`accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-white w-full transition duration-500 hover:text-white ${
                         openAccordionId === index
                           ? "accordion-active:text-white accordion-active:font-medium"
                           : ""
@@ -33,7 +33,7 @@ const Faq = () => {
                     >
                       <h5>{item.question}</h5>
                       <svg
-                        className={`text-gray-900 transition duration-500 group-hover:text-white ${
+                        className={`text-white transition duration-500 group-hover:text-white ${
                           openAccordionId === index
                             ? "accordion-active:text-white accordion-active:rotate-180"
                             : ""
@@ -55,7 +55,7 @@ const Faq = () => {
                     </button>
                     <div
                       className={`accordion-content w-full px-0 overflow-hidden pr-4 ${
-                        openAccordionId === index ? "active" : ""
+                        openAccordionId === index ? "active" : "hidden"
                       }`}
                       aria-labelledby={`basic-heading-${index}-with-arrow-always-open`}
                     >
@@ -77,7 +77,6 @@ const Faq = () => {
 
 export default Faq;
 
-// Sample FAQ data
 const faqData = [
   {
     question: "How to create an account?",
