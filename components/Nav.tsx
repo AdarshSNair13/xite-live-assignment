@@ -83,6 +83,20 @@ const Navbar = () => {
               >
                 <Link href="/">FAQs</Link>
               </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">Contact Us</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="px-24"
+              >
+                <Link href="/">
+                  <Image src="/logo2.png" width={200} height={100} alt="Logo" />
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

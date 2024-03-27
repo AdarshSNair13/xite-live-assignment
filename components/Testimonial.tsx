@@ -47,7 +47,7 @@ const Testimonial = () => {
                 </svg>{" "}
                 <blockquote>
                   {" "}
-                  <p className="text-2xl font-medium text-black">
+                  <p className="text-xs sm:text-2xl font-medium text-black">
                     {" "}
                     &ldquo;Flowbite is just awesome. It contains tons of
                     predesigned components and pages starting from login screen
@@ -93,7 +93,7 @@ const Testimonial = () => {
                 </svg>{" "}
                 <blockquote>
                   {" "}
-                  <p className="text-2xl font-medium text-black">
+                  <p className="text-xs sm:text-2xl font-medium text-black">
                     {" "}
                     &ldquo;Flowbite is just awesome. It contains tons of
                     predesigned components and pages starting from login screen
