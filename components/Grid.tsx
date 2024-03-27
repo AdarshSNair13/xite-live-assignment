@@ -4,7 +4,7 @@ const Feature = ({ title ,img,br}: any) => (
     <div className="relative">
     <img src={img}  className="w-full h-auto rounded-lg" />
     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-    <div className="absolute inset-0 flex items-center left-5">
+    <div className="absolute inset-0 flex items-center justify-center">
       <div className="text-white ">
         <h2 className=" mb-5 text-2xl font-bold">{title} <br /> {br}</h2>
         <button

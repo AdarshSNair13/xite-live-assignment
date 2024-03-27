@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-black">
+      <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 sm:bg-black">
         <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
           <Link href="/">
             <Image src="/logo1.png" width={100} height={100} alt="Logo" />

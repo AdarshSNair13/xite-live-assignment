@@ -41,10 +41,10 @@ const Hero = () => {
               >
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
                 <div className=" text-white z-[2] ">
-                  <h2 className="text-4xl md:text-7xl font-bold">
+                  <h2 className="text-2xl md:text-7xl font-bold">
                     Partner Webinar Series
                   </h2>
-                  <p className="py-5 text-xl">
+                  <p className="py-5 text-xs sm:text-xl">
                     Coffe Conversation for Throught Leaders
                   </p>
                   <button
