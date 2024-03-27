@@ -2,8 +2,14 @@
 import { MENUITEMS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     <>
       <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-black">
@@ -25,10 +31,60 @@ const Navbar = () => {
                 Contact Us
               </button>
             </Link>
-            <Link href="/" className="p-1">
-              <Image src="/logo2.png" width={100} height={100} alt="Logo" />
-            </Link>
           </ul>
+          <Link href="/" className="hidden sm:flex">
+            <Image src="/logo2.png" width={100} height={100} alt="Logo" />
+          </Link>
+
+          {/* Mobile Button */}
+          <div onClick={handleNav} className="block sm:hidden z-10">
+            {nav ? (
+              <AiOutlineClose size={40} style={{ color: "white" }} />
+            ) : (
+              <AiOutlineMenu size={40} style={{ color: "white" }} />
+            )}
+          </div>
+          {/* Mobile Menu */}
+          <div
+            className={
+              nav
+                ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-red-800 to-red-900 text-center ease-in duration-300"
+                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-gradient-to-r from-red-800 to-red-900 text-center ease-in duration-300"
+            }
+          >
+            <ul>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">The Story</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">Flavours</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">Upcomming</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">On Demand</Link>
+              </li>
+              <li
+                onClick={handleNav}
+                className="p-4 text-4xl hover:text-red-500"
+              >
+                <Link href="/">FAQs</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

@@ -3,7 +3,7 @@ import React from "react";
 const SideNav = () => {
   return (
     <div className="relative">
-      <nav className="z-20 flex shrink-0 grow-0 justify-around fixed top-2/4 -translate-y-2/4 right-6 min-h-[auto] min-w-[64px] flex-col bg-black">
+      <nav className="hidden sm:flex z-10 shrink-0 grow-0 justify-around fixed top-2/4 -translate-y-2/4 right-6 min-h-[auto] min-w-[64px] flex-col bg-black">
         <a
           href="#profile"
           className="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md"

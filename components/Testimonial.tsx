@@ -3,6 +3,14 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Testimonial = () => {
+  type InlineStyles = {
+    [key: string]: string;
+  };
+
+  const styles: InlineStyles = {
+    '--swiper-navigation-color': 'red',
+    '--swiper-pagination-color': 'red',
+  };
   return (
     <div>
       <section className="bg-white">
@@ -12,12 +20,7 @@ const Testimonial = () => {
           </h2>
           <p className="text-red-500">Partener Testimoials that Park us up</p>
           <Swiper
-            style={
-              {
-                // '--swiper-navigation-color': '#fff',
-                // '--swiper-pagination-color': '#fff',
-              }
-            }
+            style={styles}
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{

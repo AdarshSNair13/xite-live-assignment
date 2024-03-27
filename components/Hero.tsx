@@ -8,13 +8,19 @@ import "swiper/css/pagination";
 import { SLIDER_DATA } from "@/constants";
 
 const Hero = () => {
+  type InlineStyles = {
+    [key: string]: string;
+  };
+
+  const styles: InlineStyles = {
+    '--swiper-navigation-color': '#fff',
+    '--swiper-pagination-color': '#fff',
+  };
+
   return (
     <div>
       <Swiper
-       style={{
-        // '--swiper-navigation-color': '#fff',
-        // '--swiper-pagination-color': '#fff',
-      }}
+       style={styles}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
