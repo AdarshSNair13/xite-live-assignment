@@ -37,7 +37,7 @@ export default function ModalVideo({
         aria-label="Watch the video"
       >
         <Image className="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" src={thumb} width={thumbWidth} height={thumbHeight} priority alt={thumbAlt} />
-        <Image className='absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out' width={72} height={72} src="/playBtn.png" alt='Play-btn'/>
+        <Image className='absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out' width={72} height={72} src="/images/playBtn.png" alt='Play-btn'/>
         {/* Play icon */}
         {/* <svg className="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <circle className="fill-white" cx="36" cy="36" r="36" fillOpacity=".8" />
