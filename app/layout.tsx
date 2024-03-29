@@ -17,7 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-black">
+    <html lang="en" className="bg-black" suppressHydrationWarning={true}>
+       <head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no"
+          />
+        </head>
       <body className="antialiased mx-auto">
       <main className="min-w-0 mt-6 px-2 md:px-0">
         <Navbar />

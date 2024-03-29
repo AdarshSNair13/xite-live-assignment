@@ -1,5 +1,3 @@
-import React from "react";
-
 const Feature = ({ title ,img,br}: any) => (
     <div className="relative">
     <img src={img}  className="w-full h-auto rounded-lg" />
@@ -23,32 +21,32 @@ const Grid = () => {
     {
       title: "Trend ",
       br:"cloud One",
-      img:"/1.jpg"
+      img:"/images/1.jpg"
     },
     {
       title: "Trend Managed ",
       br:"Service Partner",
-      img:"/2.jpg"
+      img:"/images/2.jpg"
     },
     {
       title: "Services ",
       br:"& Support",
-      img:"/3.jpg"
+      img:"/images/3.jpg"
     },
     {
       title: "Threat",
       br:"Landscape",
-      img:"/4.jpg"
+      img:"/images/4.jpg"
     },
     {
       title: "Trend ",
       br:"Vision One",
-      img:"/5.jpg"
+      img:"/images/5.jpg"
     },
     {
       title: "Trend",
       br:"Workforce One",
-      img:"/6.jpg"
+      img:"/images/6.jpg"
     },
   ];
 

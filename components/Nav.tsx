@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300 sm:bg-black">
         <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
           <Link href="/">
-            <Image src="/logo1.png" width={100} height={100} alt="Logo" />
+            <Image src="/images/logo1.png" width={100} height={100} alt="Logo" />
           </Link>
           <ul className="hidden sm:flex">
             {MENUITEMS.map((item, index) => (
@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <Link href="/" className="hidden sm:flex">
-            <Image src="/logo2.png" width={100} height={100} alt="Logo" />
+            <Image src="/images/logo2.png" width={100} height={100} alt="Logo" />
           </Link>
 
           {/* Mobile Button */}
@@ -94,7 +94,7 @@ const Navbar = () => {
                 className="px-24"
               >
                 <Link href="/">
-                  <Image src="/logo2.png" width={200} height={100} alt="Logo" />
+                  <Image src="/images/logo2.png" width={200} height={100} alt="Logo" />
                 </Link>
               </li>
             </ul>

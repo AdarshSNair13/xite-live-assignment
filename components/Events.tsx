@@ -1,9 +1,7 @@
-import React from "react";
-
-const Feature = ({ title }: any) => (
+const Feature = ({ title ,img}: any) => (
   <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-black dark:border-black">
     <div className="relative">
-    <img src="/1.jpg"  className="w-full h-auto rounded-lg" />
+    <img src={img}  className="w-full h-auto rounded-lg" />
     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
     <div className="absolute inset-0 flex items-center left-5">
       <div className="text-white mx-auto sm:mx-0">
@@ -46,12 +44,15 @@ const GridEvents = () => {
   const features = [
     {
       title: "Trend cloud One",
+      img:"/images/e1.jpg"
     },
     {
       title: "Trend cloud One",
+      img:"/images/e2.jpg"
     },
     {
       title: "Trend cloud One",
+      img:"/images/e3.jpg"
     },
   ];
 
@@ -73,7 +74,7 @@ const GridEvents = () => {
               <div className="absolute -inset-1">
                 <div className="w-full h-full "></div>
               </div>
-              <Feature title={feature.title} />
+              <Feature title={feature.title} img={feature.img}/>
             </div>
           ))}
         </div>

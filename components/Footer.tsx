@@ -1,4 +1,3 @@
-import React from "react";
 import { socials } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +7,7 @@ const Footer = () => {
     <section className="bg-black mt-10 sm:px-16 px-8 sm:py-24 py-12">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <Link href="/">
-          <Image src="/logo1.png" width={100} height={100} alt="Logo" />
+          <Image src="/images/logo1.png" width={100} height={100} alt="Logo" />
         </Link>
 
         <ul className="flex gap-5 flex-wrap">

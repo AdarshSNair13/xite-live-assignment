@@ -1,4 +1,5 @@
 'use client'
+import { faqData } from "@/constants";
 import React, { useState } from "react";
 
 const Faq = () => {
@@ -67,7 +68,7 @@ const Faq = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <img src="/faq.jpg" alt="FAQ tailwind section" className="w-full" />
+            <img src="/images/faq.jpg" alt="FAQ tailwind section" className="w-full" />
           </div>
         </div>
       </div>
@@ -76,26 +77,3 @@ const Faq = () => {
 };
 
 export default Faq;
-
-const faqData = [
-  {
-    question: "How to create an account?",
-    answer:
-      "To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.",
-  },
-  {
-    question: "Have any trust issue?",
-    answer:
-      "Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.",
-  },
-  {
-    question: "How can I reset my password?",
-    answer:
-      "Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.",
-  },
-  {
-    question: "What is the payment process?",
-    answer:
-      "Our focus on providing robust and user-friendly content management capabilities ensures that you can manage your content with confidence, and achieve your content marketing goals with ease.",
-  },
-];
