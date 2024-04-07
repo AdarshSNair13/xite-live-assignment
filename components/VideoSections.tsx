@@ -7,7 +7,7 @@ const VideoSections = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
           <h4 className="text-2xl font-bold leading-tight text-gray-50 sm:text-4xl xl:text-5xl mb-6">
-            Stirring Up Great Conversations Over Coffe!
+            Stirring Up Great Conversations Over Coffe
           </h4>
           <p className="mb-4 text-white">
             We are creating a tool that helps you be more productive and
