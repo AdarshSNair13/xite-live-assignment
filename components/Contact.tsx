@@ -88,18 +88,19 @@ const Contact = () => {
                 </div>
               </div>
               <div className="py-10">
-              <button
-                type="submit"
-                className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-semibold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-              >
-                Submit
-              </button>
+                <button
+                  type="submit"
+                  className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-semibold leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                >
+                  Submit
+                </button>
               </div>
             </form>
             <div className="bg-slate-100 flex flex-col">
               {error &&
-                error.map((e) => (
+                error.map((e, index) => (
                   <div
+                    key={index}
                     className={`${
                       success ? "text-green-800" : "text-red-600"
                     } px-5 py-2`}

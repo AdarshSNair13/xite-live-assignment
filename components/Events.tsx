@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const Feature = ({ title ,img}: any) => (
   <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-black dark:border-black">
     <div className="relative">
-    <img src={img}  className="w-full h-auto rounded-lg" />
+    <Image src={img} height={100} width={500} alt="events" className="w-full h-auto rounded-lg" />
     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
     <div className="absolute inset-0 flex items-center left-5">
       <div className="text-white mx-auto sm:mx-0">

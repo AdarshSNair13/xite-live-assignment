@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { features } from "../constants";
 import ModalVideo from "@/common/ModalVideo";
+import Image from "next/image";
 
 const Business = () => {
   const [mainImage, setMainImage] = useState("/images/vd1.jpg");
@@ -27,8 +28,10 @@ const Business = () => {
               onClick={() => changeMainImage(icon.videoThub,icon.video)}
             >
               <div className="w-[64px] h-[64px] rounded-full flex justify-center items-center ">
-                <img
+                <Image
                   src={icon.icons}
+                  width={500}
+                  height={500}
                   alt={`Thumbnail ${index}`}
                   className="w-[80%] h-[80%] object-contain"
                 />

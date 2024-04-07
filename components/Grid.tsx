@@ -1,16 +1,26 @@
-const Feature = ({ title ,img,br}: any) => (
-    <div className="relative">
-    <img src={img}  className="w-full h-auto rounded-lg" />
+import Image from "next/image";
+
+const Feature = ({ title, img, br }: any) => (
+  <div className="relative">
+    <Image
+      src={img}
+      width={500}
+      height={300}
+      alt="events"
+      className="w-full h-auto rounded-lg"
+    />
     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="text-white ">
-        <h2 className=" mb-5 text-2xl font-bold">{title} <br /> {br}</h2>
+        <h2 className=" mb-5 text-2xl font-bold">
+          {title} <br /> {br}
+        </h2>
         <button
-            type="button"
-            className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-          >
-            View All
-          </button>
+          type="button"
+          className="inline-block rounded bg-red-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+        >
+          View All
+        </button>
       </div>
     </div>
   </div>
@@ -20,33 +30,33 @@ const Grid = () => {
   const features = [
     {
       title: "Trend ",
-      br:"cloud One",
-      img:"/images/1.jpg"
+      br: "cloud One",
+      img: "/images/1.jpg",
     },
     {
       title: "Trend Managed ",
-      br:"Service Partner",
-      img:"/images/2.jpg"
+      br: "Service Partner",
+      img: "/images/2.jpg",
     },
     {
       title: "Services ",
-      br:"& Support",
-      img:"/images/3.jpg"
+      br: "& Support",
+      img: "/images/3.jpg",
     },
     {
       title: "Threat",
-      br:"Landscape",
-      img:"/images/4.jpg"
+      br: "Landscape",
+      img: "/images/4.jpg",
     },
     {
       title: "Trend ",
-      br:"Vision One",
-      img:"/images/5.jpg"
+      br: "Vision One",
+      img: "/images/5.jpg",
     },
     {
       title: "Trend",
-      br:"Workforce One",
-      img:"/images/6.jpg"
+      br: "Workforce One",
+      img: "/images/6.jpg",
     },
   ];
 
@@ -68,7 +78,11 @@ const Grid = () => {
               <div className="absolute -inset-1">
                 <div className="w-full h-full "></div>
               </div>
-              <Feature title={feature.title} img={feature.img} br={feature.br}/>
+              <Feature
+                title={feature.title}
+                img={feature.img}
+                br={feature.br}
+              />
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,8 +9,8 @@ const Testimonial = () => {
   };
 
   const styles: InlineStyles = {
-    '--swiper-navigation-color': 'red',
-    '--swiper-pagination-color': 'red',
+    "--swiper-navigation-color": "red",
+    "--swiper-pagination-color": "red",
   };
   return (
     <div>
@@ -57,10 +58,12 @@ const Testimonial = () => {
                 </blockquote>{" "}
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                   {" "}
-                  <img
+                  <Image
                     className="w-6 h-6 rounded-full"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                    src="/images/p1.jpg"
                     alt="profile picture"
+                    width={24}
+                    height={24}
                   />{" "}
                   <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     {" "}
@@ -103,10 +106,12 @@ const Testimonial = () => {
                 </blockquote>{" "}
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                   {" "}
-                  <img
+                  <Image
                     className="w-6 h-6 rounded-full"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                    src="/images/p1.jpg"
                     alt="profile picture"
+                    width={24}
+                    height={24}
                   />{" "}
                   <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     {" "}

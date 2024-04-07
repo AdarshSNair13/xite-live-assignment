@@ -1,5 +1,6 @@
 'use client'
 import { faqData } from "@/constants";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Faq = () => {
@@ -48,7 +49,6 @@ const Faq = () => {
                         <path
                           d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
                           stroke="currentColor"
-                          strokeWidth="1.6"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         ></path>
@@ -68,7 +68,7 @@ const Faq = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <img src="/images/faq.jpg" alt="FAQ tailwind section" className="w-full" />
+            <Image src="/images/faq.jpg" height={100} width={500} alt="FAQ tailwind section" className="w-full" />
           </div>
         </div>
       </div>
